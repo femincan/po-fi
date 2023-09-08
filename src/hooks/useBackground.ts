@@ -7,7 +7,7 @@ type BackgroundState = {
 };
 
 const useBackgroundStore = create<BackgroundState>((set) => ({
-  currentBackground: backgrounds[0],
+  currentBackground: backgrounds[4],
   changeCurrentBg: (bgId) =>
     set((state) => {
       const background = backgrounds.find(({ id }) => id === bgId);
