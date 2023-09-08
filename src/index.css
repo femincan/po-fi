@@ -8,4 +8,8 @@
   #root {
     @apply h-full min-h-screen w-screen max-w-full;
   }
+
+  body {
+    @apply text-white;
+  }
 }
