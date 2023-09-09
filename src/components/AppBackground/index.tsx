@@ -8,7 +8,7 @@ export const AppBackground = ({ children }: PropsWithChildren) => {
 
   return (
     <div className='h-full w-full overflow-y-auto'>
-      <div className='relative p-5'>
+      <div className='h-full w-full p-5'>
         {children}
         <div
           style={{ backgroundImage: `url(${currentBg.src})` }}
