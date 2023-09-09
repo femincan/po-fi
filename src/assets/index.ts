@@ -4,3 +4,6 @@ export { default as LiveRoom } from './living-room.jpg';
 export { default as ParentRoom } from './parent-room.jpg';
 export { default as Penthouse } from './penthouse.jpg';
 export { default as SunsetMountain } from './sunset-mountain.jpg';
+
+export { ReactComponent as ArrowForward } from './arrow-forward.svg';
+export { ReactComponent as ArrowBack } from './arrow-back.svg';
