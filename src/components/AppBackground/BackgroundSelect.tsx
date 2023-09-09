@@ -36,7 +36,7 @@ export const BackgroundSelect = () => {
     <div
       className={`${
         isOpen ? 'w-80' : 'w-10'
-      } m-auto mb-3 flex h-24 max-w-full items-center justify-center gap-2 rounded-xl border-2 border-zinc-400 bg-zinc-800 p-3 transition-[width] duration-300 ease-in sm:m-0 sm:mb-3`}
+      } m-auto mb-3 flex h-24 max-w-full items-center justify-center gap-4 rounded-xl border-2 border-zinc-400 bg-zinc-800 p-3 transition-[width] duration-300 ease-in sm:m-0 sm:mb-3`}
     >
       {isOpen ? (
         <div className='flex flex-1 items-center gap-2 overflow-x-auto py-2'>
