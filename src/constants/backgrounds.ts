@@ -7,7 +7,7 @@ import {
   SunsetMountain,
 } from '@src/assets';
 
-type Background = {
+export type Background = {
   id: string;
   src: string;
   imageUrl: string;
