@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Background, backgrounds } from '@src/constants';
 import { useBackground } from '@src/hooks';
-import { ArrowForward, ArrowBack } from '@src/assets';
+import { icons } from '@src/assets';
 
 const BackgroundPreview = ({ background }: { background: Background }) => {
   const {
@@ -30,6 +30,7 @@ const BackgroundPreview = ({ background }: { background: Background }) => {
 export const BackgroundSelect = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const { ArrowBack, ArrowForward } = icons;
   const Arrow = isOpen ? ArrowBack : ArrowForward;
 
   return (
