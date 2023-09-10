@@ -1,11 +1,13 @@
-import {
+import { images } from '@src/assets';
+
+const {
   ChildRoom,
   JapaneseStreet,
   LiveRoom,
   ParentRoom,
   Penthouse,
   SunsetMountain,
-} from '@src/assets';
+} = images;
 
 export type Background = {
   id: string;
