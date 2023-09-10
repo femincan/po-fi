@@ -33,6 +33,7 @@ module.exports = {
     ],
     'react/jsx-filename-extension': [2, { extensions: ['.tsx'] }],
     'react/require-default-props': 0,
+    'react-hooks/exhaustive-deps': 0,
     'import/prefer-default-export': 0,
     'import/extensions': 0,
   },
