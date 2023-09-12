@@ -20,7 +20,7 @@ export const Actions = ({
   const intervalId = useRef<number | undefined>(undefined);
 
   useEffect(() => {
-    if (isPlaying === true) {
+    if (isPlaying) {
       intervalId.current = setInterval(() => {
         decreaseRemainingTimeByOne();
       }, 1000);
