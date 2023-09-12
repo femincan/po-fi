@@ -28,7 +28,7 @@ const BackgroundPreview = ({ background }: { background: Background }) => {
 };
 
 export const BackgroundSelect = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const { ArrowBack, ArrowForward } = icons;
   const Arrow = isOpen ? ArrowBack : ArrowForward;

@@ -18,6 +18,13 @@ export type Background = {
 
 export const backgrounds: Background[] = [
   {
+    id: 'penthouse',
+    src: Penthouse,
+    imageUrl:
+      'https://www.freepik.com/free-vector/girl-bedroom-interior-attic-night_7588808.htm',
+    author: 'upklyak',
+  },
+  {
     id: 'child-room',
     src: ChildRoom,
     imageUrl:
@@ -44,13 +51,6 @@ export const backgrounds: Background[] = [
     imageUrl:
       'https://www.freepik.com/free-vector/realist-illustration-room-interior_15066638.htm',
     author: 'pikisuperstar',
-  },
-  {
-    id: 'penthouse',
-    src: Penthouse,
-    imageUrl:
-      'https://www.freepik.com/free-vector/girl-bedroom-interior-attic-night_7588808.htm',
-    author: 'upklyak',
   },
   {
     id: 'sunset-mountain',
