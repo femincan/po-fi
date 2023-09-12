@@ -5,10 +5,10 @@ import ParentRoom from './images/parent-room.jpg';
 import Penthouse from './images/penthouse.jpg';
 import SunsetMountain from './images/sunset-mountain.jpg';
 
-import { ReactComponent as ArrowForward } from './icons/arrow-forward.svg';
+import { ReactComponent as ChevronLeft } from './icons/chevron-left.svg';
+import { ReactComponent as ChevronRight } from './icons/chevron-right.svg';
 import { ReactComponent as ArrowBack } from './icons/arrow-back.svg';
-import { ReactComponent as ArrowUp } from './icons/arrow-up.svg';
-import { ReactComponent as ArrowDown } from './icons/arrow-down.svg';
+import { ReactComponent as ArrowForward } from './icons/arrow-forward.svg';
 import { ReactComponent as Play } from './icons/play.svg';
 import { ReactComponent as Pause } from './icons/pause.svg';
 import { ReactComponent as Reset } from './icons/reset.svg';
@@ -27,8 +27,8 @@ const images = {
 const icons = {
   ArrowForward,
   ArrowBack,
-  ArrowUp,
-  ArrowDown,
+  ChevronLeft,
+  ChevronRight,
   Play,
   Pause,
   Reset,
