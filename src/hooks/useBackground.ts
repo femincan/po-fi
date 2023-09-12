@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
 import { backgrounds } from '@src/constants';
 
 type BackgroundState = {
@@ -6,19 +7,23 @@ type BackgroundState = {
   changeCurrentBg: (bgId: string) => void;
 };
 
-const useBackgroundStore = create<BackgroundState>((set) => ({
-  currentBackground: backgrounds[0],
-  changeCurrentBg: (bgId) =>
-    set((state) => {
-      const background = backgrounds.find(({ id }) => id === bgId);
+const useBackgroundStore = create<BackgroundState>()(
+  persist(
+    (set, get) => ({
+      currentBackground: backgrounds[0],
+      changeCurrentBg: (bgId) => {
+        const background = backgrounds.find(({ id }) => id === bgId);
 
-      if (background && background.id !== state.currentBackground.id) {
-        return { currentBackground: background };
-      }
+        if (background && background.id !== get().currentBackground.id) {
+          return set({ currentBackground: background });
+        }
 
-      return state;
+        return get();
+      },
     }),
-}));
+    { name: 'background-preference' },
+  ),
+);
 
 export const useBackground = () => {
   const currentBg = useBackgroundStore((state) => state.currentBackground);
