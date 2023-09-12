@@ -8,7 +8,7 @@ export const AppBackground = ({ children }: PropsWithChildren) => {
 
   return (
     <div className='h-full w-full overflow-y-auto'>
-      <div className='h-full w-full p-5'>
+      <div className='flex min-h-full w-full flex-col gap-20 px-3 py-10'>
         {children}
         <div
           style={{
@@ -16,8 +16,10 @@ export const AppBackground = ({ children }: PropsWithChildren) => {
           }}
           className='absolute left-0 top-0 -z-10 h-full w-full bg-black/25 bg-cover bg-fixed bg-center bg-blend-darken'
         />
-        <BackgroundSelect />
-        <BackgroundCredit />
+        <div className='flex flex-col items-center justify-center'>
+          <BackgroundSelect />
+          <BackgroundCredit />
+        </div>
       </div>
     </div>
   );
