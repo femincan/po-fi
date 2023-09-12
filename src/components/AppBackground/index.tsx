@@ -11,8 +11,10 @@ export const AppBackground = ({ children }: PropsWithChildren) => {
       <div className='h-full w-full p-5'>
         {children}
         <div
-          style={{ backgroundImage: `url(${currentBg.src})` }}
-          className='absolute left-0 top-0 -z-10 h-full w-full bg-cover bg-fixed bg-center'
+          style={{
+            backgroundImage: `url(${currentBg.src})`,
+          }}
+          className='absolute left-0 top-0 -z-10 h-full w-full bg-black/25 bg-cover bg-fixed bg-center bg-blend-darken'
         />
         <BackgroundSelect />
         <BackgroundCredit />
