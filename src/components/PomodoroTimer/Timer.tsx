@@ -21,7 +21,7 @@ export const Timer = () => {
       <p id='timer-label' className='text-base sm:text-xl'>
         {isSession ? 'Session' : 'Break'}
       </p>
-      <p id='time-left' className='text-4xl sm:text-7xl'>
+      <p id='time-left' className='text-4xl font-bold sm:text-7xl'>
         {normalizedRemainingTime}
       </p>
     </div>

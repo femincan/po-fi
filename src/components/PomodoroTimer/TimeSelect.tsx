@@ -37,7 +37,10 @@ export const TimeSelect = () => {
           >
             <ArrowBack />
           </button>
-          <p id='session-length' className='basis-1/4 text-lg sm:text-xl'>
+          <p
+            id='session-length'
+            className='basis-1/4 text-lg font-medium sm:text-xl'
+          >
             {sessionTime}
           </p>
           <button
@@ -66,7 +69,10 @@ export const TimeSelect = () => {
           >
             <ArrowBack />
           </button>
-          <p id='break-length' className='basis-1/4 text-lg sm:text-xl'>
+          <p
+            id='break-length'
+            className='basis-1/4 text-lg font-medium sm:text-xl'
+          >
             {breakTime}
           </p>
           <button
