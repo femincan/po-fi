@@ -40,11 +40,7 @@ const normalizeTime = (time: number) => {
 
 export const usePomodoroStore = create<PomodoroState & PomodoroActions>(
   (set) => ({
-    sessionTime: 25,
-    breakTime: 5,
-    remainingTime: 25 * 60,
-    isPlaying: false,
-    isSession: true,
+    ...defaultState,
     updateSessionTime: (updatedSessionTime) =>
       set(() => {
         const normalizedSessionTime = normalizeTime(updatedSessionTime);
