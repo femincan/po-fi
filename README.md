@@ -4,7 +4,8 @@
 
 A pomodoro app created with React with Vite (TypeScript), Zustand, and Tailwind CSS for the fifth project of the Front End Development Libraries Curriculum of FreeCodeCamp.
 
-![Application Screenshot]()
+![Application Screenshot](https://github.com/femincan/po-fi/assets/78358128/0b230fa1-3584-4e57-ae67-f11de0ecb7a5)
+
 
 ## Table of Contents
 
